@@ -1,0 +1,33 @@
+### 
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "sender": "Shoval",
+    "message": "How are you?"
+}
+
+###
+
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/posts/67447cf4db214c2ad9a696d2
+
+
+###
+
+GET http://localhost:3000/posts/?sender=Shoval
+
+
+###
+
+PUT http://localhost:3000/posts/67447cf4db214c2ad9a696d2
+Content-Type: application/json
+
+{
+    "sender": "Linoy",
+    "message": "How are you Shoval?"
+}
