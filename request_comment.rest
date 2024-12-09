@@ -1,0 +1,29 @@
+###
+
+POST http://localhost:3000/comments 
+Content-Type: application/json
+
+{
+    "sender": "Linoy",
+    "comment": "My new comment", 
+    "postId": "67449b37eba6907c947753c7"
+}
+
+###
+
+GET http://localhost:3000/comments/67449b8eeba6907c947753d5
+
+
+###
+
+PUT http://localhost:3000/comments/67449b8eeba6907c947753d5
+Content-Type: application/json
+
+{
+    "comment": "My updated comment"
+}
+
+
+###
+
+DELETE http://localhost:3000/comments/67449b8eeba6907c947753d5
